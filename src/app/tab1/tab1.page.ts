@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// comments are in green
 
 @Component({
   selector: 'app-tab1',
