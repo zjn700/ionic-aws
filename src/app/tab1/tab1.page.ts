@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 // try again :/
 // one more time...
 // added user.name user.email to local config
+// hmm
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
