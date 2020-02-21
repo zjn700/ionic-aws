@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 // test of github ssh connection
 // try again :/
 // one more time...
+// added user.name user.email to local config
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
