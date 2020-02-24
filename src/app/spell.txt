@@ -2,12 +2,18 @@ Whatever test of the spellchecking app. That can be test test test test test
 attested born again born again born again born again born again born again born
 ###
 
+Hmm this is test interesting
+seems like every word i type is added to the list. List 
+
+Better to check as you type than to wait for the autocorrect to work. Also it
+would be useful if the autocorrect were a little faster.
+
+Had to switch to a darker background in order to use screen with vim.
 
 
+Here your go is this any better? I think it may be. Not perfect, but pretty
 
-here your go is this any better? I think it may be. Not perfect, but pretty
-
-again born again born again to.  Hmm, whatever it takes whenever this and that
+Again born again born again to.  Hmm, whatever it takes whenever this and that
 good. Lets 
 
 What now?  Why does this matter?  Let's find out what the purpose of this is

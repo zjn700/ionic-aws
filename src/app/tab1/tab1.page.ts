@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// comments are in green
+//comments are in green
 // test of github ssh connection
 // try again :/
 // one more time...

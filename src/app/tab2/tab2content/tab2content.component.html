@@ -1,5 +1,27 @@
 <ion-card>
   <ion-card-title>
-    Joshua Aaron
-  </ion-card-title>
+    <!--Joshua Aaron-->
+    {{ son }}
+    <!-- Input with placeholder -->
+    <ion-input
+      autocorrect="on"
+      autocomplete="on"
+      autofocus="true"
+      placeholder="Enter email"
+      clearInput="true"
+      color="medium"
+      inputmode="email"
+      type="email"
+      multiple="true"
+    ></ion-input
+  ></ion-card-title>
+  <ion-card-content>{{ son }} </ion-card-content>
 </ion-card>
+
+<!-- fab placed to the top end -->
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button>
+    <!--<ion-icon name="arrow-forward-circle"></ion-icon>-->
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
