@@ -1,20 +1,34 @@
 import { Component } from "@angular/core";
-import { ActionSheetController } from "@ionic/angular";
-
+import { ActionSheetController, AlertController } from "@ionic/angular";
 @Component({
   selector: "app-tab3",
   templateUrl: "tab3.page.html",
   styleUrls: ["tab3.page.scss"]
 })
 export class Tab3Page {
-  constructor(public actionSheetController: ActionSheetController) {}
+  constructor(
+    public actionSheetController: ActionSheetController,
+    public alertController: AlertController
+  ) {}
+
+  async presentAlertMultipleButtons() {
+    const alert = await this.alertController.create({
+      header: "Alert",
+      subHeader: "Subtitle",
+      message: "This is an alert message.",
+      buttons: ["Cancel", "Open Modal", "Delete"]
+    });
+
+    await alert.present();
+  }
 
   async presentActionSheet() {
     const actionSheet = await this.actionSheetController.create({
       header: "Albums",
       subHeader: "Early Years",
-      translucent:"true",
-      keyboardClose:"true",
+      translucent: true,
+      keyboardClose: true,
+      cssClass: "sheet",
       buttons: [
         {
           text: "Delete",
