@@ -11,6 +11,18 @@ export class Tab3Page {
     public alertController: AlertController
   ) {}
 
+  logScrollStart() {
+    console.log("logScrollStart");
+  }
+
+  logScrolling() {
+    console.log("logScrollStart");
+  }
+
+  logScrollEnd() {
+    console.log("logScrollStart");
+  }
+
   async presentAlertMultipleButtons() {
     const alert = await this.alertController.create({
       header: "Alert",

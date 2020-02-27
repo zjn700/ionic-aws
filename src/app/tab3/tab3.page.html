@@ -14,7 +14,12 @@
   </ion-button>
 </ion-header>
 
-<ion-content>
+<ion-content
+  [scrollEvents]="true"
+  (ionScrollStart)="logScrollStart()"
+  (ionScroll)="logScrolling($event)"
+  (ionScrollEnd)="logScrollEnd()"
+>
   <ion-card>
     <ion-card-header>
       <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
@@ -27,7 +32,7 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card color="danger" button="true" href="assets/shapes.svg">
+  <ion-card slot="fixed" color="danger" button="true" href="assets/shapes.svg">
     <!--download="shapes.svg"-->
     <ion-item>
       <ion-icon name="pin" slot="start"></ion-icon>
