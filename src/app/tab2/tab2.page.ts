@@ -10,6 +10,12 @@ export class Tab2Page {
   son = "Zac";
   constructor() {}
 
+  public form = [
+    { val: "Pepperoni", isChecked: true },
+    { val: "Sausage", isChecked: false },
+    { val: "Mushroom", isChecked: false }
+  ];
+
   changeText() {
     if (this.buttonName == "Change") {
       this.buttonName = "Uh oh";

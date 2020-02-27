@@ -17,16 +17,31 @@
 
   <ion-card class="welcome-card">
     <img src="/assets/shapes.svg" alt="shapes" />
-    <!--<img src="/assets/ipad-aws.png" alt="shapes" />-->
+  </ion-card>
 
-    <!--<ion-card-header>-->
-    <!--<ion-card-subtitle>Get Started</ion-card-subtitle>-->
-    <!--<ion-card-title>Welcome to Ionic on AWS, Jaji</ion-card-title>-->
-    <!--<ion-label><h1>Basic EDITING</h1></ion-label>-->
-    <!--<ion-item href="https://ionicframework.com/docs/building/scaffolding">-->
-    <!--<ion-icon slot="start" color="medium" name="build"></ion-icon>-->
-    <!--<ion-label>Scaffold Out Your App</ion-label>-->
-    <!--</ion-item>-->
-    <!--</ion-card-header>-->
+  <ion-card class="welcome-card">
+    <!-- Default Checkbox -->
+    <ion-checkbox></ion-checkbox>
+
+    <!-- Disabled Checkbox -->
+    <ion-checkbox disabled="true"></ion-checkbox>
+
+    <!-- Checked Checkbox -->
+    <ion-checkbox checked="true"></ion-checkbox>
+
+    <!-- Checkbox Colors -->
+    <ion-checkbox color="primary"></ion-checkbox>
+    <ion-checkbox color="secondary"></ion-checkbox>
+    <ion-checkbox color="danger"></ion-checkbox>
+    <ion-checkbox color="light"></ion-checkbox>
+    <ion-checkbox color="dark"></ion-checkbox>
+
+    <!-- Checkboxes in a List -->
+    <ion-list>
+      <ion-item *ngFor="let entry of form">
+        <ion-label>{{ entry.val }}</ion-label>
+        <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+      </ion-item>
+    </ion-list>
   </ion-card>
 </ion-content>
