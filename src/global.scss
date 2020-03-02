@@ -32,7 +32,7 @@
 }
 
 :root {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Open Sans";
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
@@ -110,7 +110,8 @@ ion-content {
   margin-left: 1rem;
 }
 
-.nav-link svg {
+.nav-link i {
+  font-size: 2rem;
   width: 2rem;
   min-width: 2rem;
   margin: 0 1.5rem;
@@ -138,13 +139,16 @@ ion-content {
   text-align: center;
   color: var(--text-secondary);
   background: var(--bg-secondary);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.3ch;
   width: 100%;
 }
 
-.logo svg {
+//.logo svg {
+.logo i {
+  //position: relative;
+  //float: right;
   transform: rotate(0deg);
   transition: var(--transition-speed);
 }
@@ -153,10 +157,12 @@ ion-content {
   display: inline;
   position: absolute;
   left: -999px;
+  //margin-left: 4rem;
   transition: var(--transition-speed);
 }
 
-.navbar:hover .logo svg {
+//.navbar:hover .logo svg {
+.navbar:hover .logo i {
   transform: rotate(-180deg);
 }
 
@@ -168,23 +174,37 @@ ion-content {
   .navbar {
     bottom: 0;
     width: 100vw;
-    height: 5rem;
+    height: 6rem;
+    transition: none;
   }
 
   .logo {
     display: none;
+    transition: none;
   }
 
   .navbar-nav {
     flex-direction: row;
+    transition: none;
   }
 
   .nav-link {
     justify-content: center;
+    transition: none;
   }
 
   main {
     margin: 0;
+  }
+
+  .nav-link i {
+    font-size: 1.5rem;
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0;
+    margin-bottom: 3.5rem;
+    //padding: 0;
+    transition: none;
   }
 }
 
@@ -200,7 +220,8 @@ ion-content {
     display: inline;
   }
 
-  .navbar:hover .logo svg {
+  //.navbar:hover .logo svg {
+  .navbar:hover .logo i {
     margin-left: 11rem;
   }
 
