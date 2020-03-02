@@ -177,7 +177,11 @@ ion-content {
     height: 6rem;
     transition: none;
   }
-
+  
+  .navbar-nav {
+    width:100vw;
+  }
+  
   .logo {
     display: none;
     transition: none;
