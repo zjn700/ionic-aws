@@ -3,22 +3,20 @@ if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/dev/ionic-aws/src/app/tab2/tab2content
+cd ~/dev/ionic-aws/src/app
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +25 tab2content.component.html
-badd +1 tab2content.component.ts
-badd +53 ~/.vimrc
-badd +1 ~/dev/ionic-aws/src/app/tab2/tab2.module.ts
-badd +1 ~/dev/ionic-aws/src/app/tab3/tab3.page.html
-badd +9 ~/dev/ionic-aws/src/app/tab3/tab3.page.ts
-badd +0 ~/dev/ionic-aws/src/app/tab3/tab3.page.scss
+badd +130 ~/dev/ionic-aws/src/global.scss
+badd +3 app.component.html
+badd +0 app-routing.module.ts
+badd +1 tabs/tabs.page.html
+badd +1 ~/dev/ionic-aws/src/index.html
+badd +0 ~/.vim/coc-settings.json
 argglobal
 silent! argdel *
-$argadd tab2content.component.html
-edit ~/dev/ionic-aws/src/app/tab3/tab3.page.html
+edit NetrwTreeListing\ 4
 set splitbelow splitright
 set nosplitright
 wincmd t
@@ -33,14 +31,14 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 36 - ((16 * winheight(0) + 14) / 29)
+let s:l = 29 - ((24 * winheight(0) + 14) / 29)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-36
-normal! 05|
-lcd ~/dev/ionic-aws/src/app/tab2/tab2content
-tabedit ~/dev/ionic-aws/src/app/tab3/tab3.page.ts
+29
+normal! 03|
+lcd ~/dev/ionic-aws/src/app
+tabedit ~/dev/ionic-aws/src/global.scss
 set splitbelow splitright
 set nosplitright
 wincmd t
@@ -55,14 +53,58 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 8 - ((7 * winheight(0) + 14) / 29)
+let s:l = 73 - ((2 * winheight(0) + 14) / 29)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-8
-normal! 08|
-lcd ~/dev/ionic-aws/src/app/tab2/tab2content
-tabnext 1
+73
+normal! 03|
+lcd ~/dev/ionic-aws/src/app
+tabedit ~/dev/ionic-aws/src/app/tabs/tabs.page.html
+set splitbelow splitright
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 6 - ((5 * winheight(0) + 14) / 29)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+6
+normal! 021|
+lcd ~/dev/ionic-aws/src/app
+tabedit ~/.vim/coc-settings.json
+set splitbelow splitright
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 2 - ((1 * winheight(0) + 14) / 29)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+2
+normal! 067|
+lcd ~/dev/ionic-aws/src/app
+tabnext 2
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
 endif

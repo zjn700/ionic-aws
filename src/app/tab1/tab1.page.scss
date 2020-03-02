@@ -2,3 +2,14 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
+.no-pad{
+  --ion-grid-column-padding: 0px;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.no-mar{
+  margin-top:0px;
+  margin-bottom:0px;
+}
