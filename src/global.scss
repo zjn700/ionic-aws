@@ -177,11 +177,7 @@ ion-content {
     height: 6rem;
     transition: none;
   }
-  
-  .navbar-nav {
-    width:100vw;
-  }
-  
+
   .logo {
     display: none;
     transition: none;
@@ -189,7 +185,13 @@ ion-content {
 
   .navbar-nav {
     flex-direction: row;
+    width: 100vw;
     transition: none;
+  }
+
+  .navbar:hover .logo i {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .nav-link {
