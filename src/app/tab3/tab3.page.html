@@ -4,14 +4,6 @@
       Tab Three
     </ion-title>
   </ion-toolbar>
-
-  <ion-button color="secondary" (click)="presentActionSheet()">
-    <ion-icon name="logo-angular"></ion-icon>
-  </ion-button>
-
-  <ion-button color="warning" (click)="presentAlertMultipleButtons()">
-    <ion-icon name="logo-angular"></ion-icon>
-  </ion-button>
 </ion-header>
 
 <ion-content
@@ -20,6 +12,14 @@
   (ionScroll)="logScrolling($event)"
   (ionScrollEnd)="logScrollEnd()"
 >
+  <ion-button color="secondary" (click)="presentActionSheet()">
+    <ion-icon name="logo-angular"></ion-icon>
+  </ion-button>
+
+  <ion-button color="warning" (click)="presentAlertMultipleButtons()">
+    <ion-icon name="logo-angular"></ion-icon>
+  </ion-button>
+
   <ion-card>
     <ion-card-header>
       <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
