@@ -3,13 +3,20 @@
   overflow: hidden;
 }
 
-.no-pad{
-  --ion-grid-column-padding: 0px;
-  margin-top:0px;
-  margin-bottom:0px;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 
-.no-mar{
-  margin-top:0px;
-  margin-bottom:0px;
+.no-pad {
+  --ion-grid-column-padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.no-mar {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }

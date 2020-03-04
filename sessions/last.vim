@@ -8,15 +8,17 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +130 ~/dev/ionic-aws/src/global.scss
+badd +1 ~/dev/ionic-aws/src/global.scss
 badd +3 app.component.html
-badd +0 app-routing.module.ts
+badd +1 app-routing.module.ts
 badd +1 tabs/tabs.page.html
 badd +1 ~/dev/ionic-aws/src/index.html
-badd +0 ~/.vim/coc-settings.json
+badd +2 ~/.vim/coc-settings.json
+badd +46 ~/.vimrc
+badd +1 \[Plugins]
 argglobal
 silent! argdel *
-edit NetrwTreeListing\ 4
+edit ~/dev/ionic-aws/src/global.scss
 set splitbelow splitright
 set nosplitright
 wincmd t
@@ -31,34 +33,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 29 - ((24 * winheight(0) + 14) / 29)
+let s:l = 75 - ((4 * winheight(0) + 14) / 29)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-29
-normal! 03|
-lcd ~/dev/ionic-aws/src/app
-tabedit ~/dev/ionic-aws/src/global.scss
-set splitbelow splitright
-set nosplitright
-wincmd t
-set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 73 - ((2 * winheight(0) + 14) / 29)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-73
-normal! 03|
+75
+normal! 0
 lcd ~/dev/ionic-aws/src/app
 tabedit ~/dev/ionic-aws/src/app/tabs/tabs.page.html
 set splitbelow splitright
@@ -80,31 +60,9 @@ if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 6
-normal! 021|
+normal! 020|
 lcd ~/dev/ionic-aws/src/app
-tabedit ~/.vim/coc-settings.json
-set splitbelow splitright
-set nosplitright
-wincmd t
-set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 2 - ((1 * winheight(0) + 14) / 29)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-2
-normal! 067|
-lcd ~/dev/ionic-aws/src/app
-tabnext 2
+tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
 endif
