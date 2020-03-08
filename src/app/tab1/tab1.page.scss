@@ -17,10 +17,6 @@ img {
   height: 80px;
 }
 
-//.directions {
-//font-size: 1.2rem;
-//}
-
 .green-svg {
   filter: invert(70%) sepia(30%) saturate(6807%) hue-rotate(108deg)
     brightness(100%) contrast(87%);
@@ -68,23 +64,10 @@ img {
     brightness(108%) contrast(100%);
 }
 
-//.content-grid {
-//display: flex;
-//flex-wrap: wrap;
-////align-content: stretch;
-//width: 100% !important;
-//}
-
-//.content-grid ion-card {
-//width: 40%;
-//color: red;
-//}
-
 .parent {
   display: flex;
   flex-wrap: wrap;
   //flex-direction: column-reverse;
-  //background: #eee;
   margin: 2%;
 }
 
@@ -92,34 +75,14 @@ img {
   flex: 1 1 41%;
   margin: 5px;
   height: 100px;
-  //background: #ddd;
 }
 .child:last-child {
   max-width: 48.95%;
 }
 
-//ion-item {
-//display: flex;
-//flex-wrap: wrap;
-//}
-
-//ion-item > ion-card {
-//flex: 0 50%;
-//}
-
-//.no-pad {
-//--ion-grid-column-padding: 0px;
-//margin-top: 0px;
-//margin-bottom: 0px;
-//}
-
-//.no-mar {
-//margin-top: 0px;
-//margin-bottom: 0px;
-//}
-
-/* Narrow  screens */
-@media only screen and (max-width: 560px) {
+// Narrow  screens -- phones i portrait, except as noted
+// ...only one column of cards
+@media only screen and (max-width: 568px) {
   .child {
     flex: 1 1 90%;
   }
@@ -130,48 +93,46 @@ img {
 
   ion-card-title {
     font-size: 18pt;
-    color: red;
+    //color: red;
   }
-
-  //.welcome-card {
-  //margin: 0;
-  //}
-
+  // really small phones
   @media (orientation: landscape) {
     ion-card-header {
-      padding-top: 0;
+      //padding-top: 0;
       padding-bottom: 0;
     }
   }
 }
 
-// Wide screens
-@media only screen and (min-width: 560px) {
-  img {
-    width: 60%;
-  }
+// Wide screens - necessary?
+//@media only screen and (min-width: 560px) {
+//img {
+//width: 60%;
+//}
 
-  ion-card-title {
-    font-size: 24pt;
-    font-size: 1.5rem;
-    color: green;
-  }
-}
+//ion-card-title {
+//font-size: 1.5rem;
+//color: green;
+//}
+//}
 
+// All phones in landscape
 @media only screen and (min-width: 460px) and (max-width: 900px) {
   @media (orientation: landscape) {
     ion-card-title {
-      color: yellow;
+      //color: yellow;
+      //padding-top: 0;
+      padding-bottom: 0;
     }
   }
 }
 
 // All large screen to include ipads and desktops
-//@media only screen and (min-width: 768px) and (max-width: 1024px) {
 @media only screen and (min-width: 768px) {
   @media (orientation: portrait) {
     ion-card-title {
-      color: purple;
+      font-size: 1.8rem;
+      //color: purple;
     }
   }
 }
@@ -179,27 +140,8 @@ img {
 @media only screen and (min-width: 1024px) {
   @media (orientation: landscape) {
     ion-card-title {
-      color: tomato;
+      font-size: 1.8rem;
+      //color: tomato;
     }
   }
 }
-//.directions {
-//font-size: 1.5rem;
-////float: left;
-//}
-
-//@media (min-aspect-ratio: 19/5) {
-//@media (min-device-pixel-ratio: 3) {
-//.welcome-card img {
-//display: none;
-//}
-//}
-
-//@media only screen and (orientation: portrait) and (max-device-width: 1200px) {
-//@media only screen and (orientation: portrait) {
-//@media (min-width: 200px) {
-//ion-card-title {
-//color: red;
-//}
-//}
-//}
