@@ -1,6 +1,7 @@
 .welcome-card img {
   max-height: 35vh;
   overflow: hidden;
+  text-align: center;
 }
 
 img {
@@ -10,13 +11,195 @@ img {
   width: 90%;
 }
 
-.no-pad {
-  --ion-grid-column-padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+.icon-img {
+  float: left;
+  width: 80px;
+  height: 80px;
 }
 
-.no-mar {
-  margin-top: 0px;
-  margin-bottom: 0px;
+//.directions {
+//font-size: 1.2rem;
+//}
+
+.green-svg {
+  filter: invert(70%) sepia(30%) saturate(6807%) hue-rotate(108deg)
+    brightness(100%) contrast(87%);
 }
+
+.green-card {
+  background: #09bd81;
+  color: white;
+}
+
+.on-green-font {
+  color: white;
+}
+
+.on-green-svg {
+  filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
+    brightness(108%) contrast(100%);
+}
+
+.yellow-card {
+  background: #c9b306;
+  color: white;
+}
+
+.on-yellow-font {
+  color: white;
+}
+
+.on-yellow-svg {
+  filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
+    brightness(108%) contrast(100%);
+}
+
+.red-card {
+  background: #ab3616;
+  color: white;
+}
+
+.on-red-font {
+  color: white;
+}
+
+.on-red-svg {
+  filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
+    brightness(108%) contrast(100%);
+}
+
+//.content-grid {
+//display: flex;
+//flex-wrap: wrap;
+////align-content: stretch;
+//width: 100% !important;
+//}
+
+//.content-grid ion-card {
+//width: 40%;
+//color: red;
+//}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  //flex-direction: column-reverse;
+  //background: #eee;
+  margin: 2%;
+}
+
+.child {
+  flex: 1 1 41%;
+  margin: 5px;
+  height: 100px;
+  //background: #ddd;
+}
+.child:last-child {
+  max-width: 48.95%;
+}
+
+//ion-item {
+//display: flex;
+//flex-wrap: wrap;
+//}
+
+//ion-item > ion-card {
+//flex: 0 50%;
+//}
+
+//.no-pad {
+//--ion-grid-column-padding: 0px;
+//margin-top: 0px;
+//margin-bottom: 0px;
+//}
+
+//.no-mar {
+//margin-top: 0px;
+//margin-bottom: 0px;
+//}
+
+/* Narrow  screens */
+@media only screen and (max-width: 560px) {
+  .child {
+    flex: 1 1 90%;
+  }
+
+  .child:last-child {
+    max-width: 98%;
+  }
+
+  ion-card-title {
+    font-size: 18pt;
+    color: red;
+  }
+
+  //.welcome-card {
+  //margin: 0;
+  //}
+
+  @media (orientation: landscape) {
+    ion-card-header {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+// Wide screens
+@media only screen and (min-width: 560px) {
+  img {
+    width: 60%;
+  }
+
+  ion-card-title {
+    font-size: 24pt;
+    font-size: 1.5rem;
+    color: green;
+  }
+}
+
+@media only screen and (min-width: 460px) and (max-width: 900px) {
+  @media (orientation: landscape) {
+    ion-card-title {
+      color: yellow;
+    }
+  }
+}
+
+// All large screen to include ipads and desktops
+//@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
+  @media (orientation: portrait) {
+    ion-card-title {
+      color: purple;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  @media (orientation: landscape) {
+    ion-card-title {
+      color: tomato;
+    }
+  }
+}
+//.directions {
+//font-size: 1.5rem;
+////float: left;
+//}
+
+//@media (min-aspect-ratio: 19/5) {
+//@media (min-device-pixel-ratio: 3) {
+//.welcome-card img {
+//display: none;
+//}
+//}
+
+//@media only screen and (orientation: portrait) and (max-device-width: 1200px) {
+//@media only screen and (orientation: portrait) {
+//@media (min-width: 200px) {
+//ion-card-title {
+//color: red;
+//}
+//}
+//}

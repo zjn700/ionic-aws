@@ -7,18 +7,18 @@
 </ion-header>
 
 <ion-content>
-  <app-tab2content [son]="son"></app-tab2content>
-  <ion-button color="primary" expand="full" (click)="changeText()">
-    {{ buttonName }}
-  </ion-button>
-  <ion-card class="welcome-card">
-    <!--<h2>hey: you</h2>-->
-  </ion-card>
-
   <ion-card class="welcome-card">
     <img src="/assets/shapes.svg" alt="shapes" />
   </ion-card>
 
+  <app-tab2content [son]="son"></app-tab2content>
+  <ion-button color="primary" expand="full" (click)="changeText()">
+    {{ buttonName }}
+  </ion-button>
+
+  <ion-card class="welcome-card">
+    <!--<h2>hey: you</h2>-->
+  </ion-card>
   <ion-card class="welcome-card">
     <!-- Default Checkbox -->
     <ion-checkbox></ion-checkbox>

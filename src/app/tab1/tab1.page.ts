@@ -1,19 +1,16 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+import { lessons } from "../../assets/Lessons";
+
 //comments are in green
-// test of github ssh connection
-// try again :/
-// one more time...
-// added user.name user.email to local config
-// hmm
-// grrr
-// failed again
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss']
+  selector: "app-tab1",
+  templateUrl: "tab1.page.html",
+  styleUrls: ["tab1.page.scss"]
 })
 export class Tab1Page {
-
-  constructor( ) {}
-
+  lessons = lessons;
+  items = [0, 1];
+  constructor() {
+    console.log(lessons);
+  }
 }

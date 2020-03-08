@@ -6,84 +6,82 @@
 
 <ion-content>
   <ion-card class="welcome-card">
-    <img src="/assets/rb-svg-3.svg" alt="" />
-    <!--<img src="/assets/red-black.svg" alt="" />-->
-    <!--<img src="/assets/eyes-be.svg" alt="" />-->
     <!--<img src="/assets/shapes.svg" alt="" />-->
     <ion-card-header>
-      <ion-card-subtitle>Level One</ion-card-subtitle>
-      <ion-card-title>Greetings</ion-card-title>
+      <!--<ion-card-subtitle>Level One</ion-card-subtitle>-->
+      <ion-card-title>Level One</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <p>
-        Select from the lessons below:
-      </p>
+      <!--<p>-->
+      <!--Select from the lessons below:-->
+      <!--</p>-->
     </ion-card-content>
   </ion-card>
-  <ion-grid class="ion-no-padding">
-    <ion-row class="no-pad">
-      <ion-col size="12" size-md>
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Test</ion-card-title>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-      <ion-col size="12" size-md>
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Test</ion-card-title>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-    <ion-row class="no-pad">
-      <ion-col size="12" size-md>
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Test</ion-card-title>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-      <ion-col size="12" size-md>
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Test</ion-card-title>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
 
-  <ion-list lines="none">
-    <ion-list-header> </ion-list-header>
-    <ion-item href="https://ionicframework.com/docs/">
-      <ion-icon slot="start" color="medium" name="book"></ion-icon>
-      Greetings
-    </ion-item>
-    <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-      <ion-icon slot="start" color="medium" name="build"></ion-icon>
-      <ion-label>Scaffold Out Your App</ion-label>
-    </ion-item>
-    <ion-item href="https://ionicframework.com/docs/layout/structure">
-      <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-      <ion-label>Change Your App Layout</ion-label>
-    </ion-item>
-    <ion-item href="https://ionicframework.com/docs/theming/basics">
-      <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-      <ion-label>Theme Your App</ion-label>
-    </ion-item>
-    <ion-item href="https://ionicframework.com/docs/theming/basics">
-      <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-      <ion-label>Theme Your App</ion-label>
-    </ion-item>
-  </ion-list>
+  <ion-list class="parent">
+    <ion-card
+      class="child {{ lesson.color }}-card"
+      *ngFor="let lesson of lessons"
+    >
+      <ion-card-header>
+        <img
+          class="icon-img on-{{ lesson.color }}-svg"
+          src="assets/icon/custom/{{ lesson.icon }}.svg"
+        />
+        <ion-card-title class="on-{{ lesson.color }}-font">{{
+          lesson.title
+        }}</ion-card-title>
+      </ion-card-header>
+    </ion-card></ion-list
+  >
+  <!--<ion-grid class="ion-no-padding">-->
+  <!--<ion-row class="no-pad">-->
+  <!--<ion-col size="12" size-md>-->
+  <!--<ion-card>-->
+  <!--<ion-card-header>-->
+  <!--<ion-card-title>Test</ion-card-title>-->
+  <!--</ion-card-header>-->
+  <!--</ion-card>-->
+  <!--</ion-col>-->
+  <!--<ion-col size="12" size-md>-->
+  <!--<ion-card>-->
+  <!--<ion-card-header>-->
+  <!--<ion-card-title>Test</ion-card-title>-->
+  <!--</ion-card-header>-->
+  <!--</ion-card>-->
+  <!--</ion-col>-->
+  <!--</ion-row>-->
+  <!--</ion-grid>-->
 
-  <!-- fab placed to the top end -->
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button>
-      <!--<ion-icon name="arrow-forward-circle"></ion-icon>-->
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+  <!--<ion-list lines="none">-->
+  <!--<ion-list-header> </ion-list-header>-->
+  <!--<ion-item href="https://ionicframework.com/docs/">-->
+  <!--<ion-icon slot="start" color="medium" name="book"></ion-icon>-->
+  <!--Greetings-->
+  <!--</ion-item>-->
+  <!--<ion-item href="https://ionicframework.com/docs/building/scaffolding">-->
+  <!--<ion-icon slot="start" color="medium" name="build"></ion-icon>-->
+  <!--<ion-label>Scaffold Out Your App</ion-label>-->
+  <!--</ion-item>-->
+  <!--<ion-item href="https://ionicframework.com/docs/layout/structure">-->
+  <!--<ion-icon slot="start" color="medium" name="grid"></ion-icon>-->
+  <!--<ion-label>Change Your App Layout</ion-label>-->
+  <!--</ion-item>-->
+  <!--<ion-item href="https://ionicframework.com/docs/theming/basics">-->
+  <!--<ion-icon slot="start" color="medium" name="color-fill"></ion-icon>-->
+  <!--<ion-label>Theme Your App</ion-label>-->
+  <!--</ion-item>-->
+  <!--<ion-item href="https://ionicframework.com/docs/theming/basics">-->
+  <!--<ion-icon slot="start" color="medium" name="color-fill"></ion-icon>-->
+  <!--<ion-label>Theme Your App</ion-label>-->
+  <!--</ion-item>-->
+  <!--</ion-list>-->
+
+  <!--[> fab placed to the top end <]-->
+  <!--<ion-fab vertical="bottom" horizontal="end" slot="fixed">-->
+  <!--<ion-fab-button>-->
+  <!--[><ion-icon name="arrow-forward-circle"></ion-icon><]-->
+  <!--<ion-icon name="add"></ion-icon>-->
+  <!--</ion-fab-button>-->
+  <!--</ion-fab>-->
 </ion-content>
