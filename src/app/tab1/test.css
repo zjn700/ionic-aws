@@ -1,0 +1,25 @@
+.color-cards ion-header ion-toolbar ion-title {
+  color: #ff0000;
+}
+.color-cards ion-content ion-card .welcome-card {
+  max-height: 35vh;
+  overflow: hidden;
+  text-align: center;
+}
+.color-cards ion-content ion-list .parent {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2%;
+}
+.color-cards ion-content ion-list .parent ion-card .child {
+  flex: 1 1 41%;
+  margin: 5px;
+  height: 100px;
+}
+.color-cards ion-content ion-list .parent ion-card .child ion-card-header img .icon-img {
+  float: left;
+  width: 80px;
+  height: 80px;
+}
+
+/*# sourceMappingURL=test.css.map */

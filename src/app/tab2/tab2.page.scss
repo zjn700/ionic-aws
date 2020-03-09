@@ -1,1 +1,160 @@
+.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
+  text-align: center;
+}
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.icon-img {
+  float: left;
+  width: 80px;
+  height: 80px;
+}
+
+.green-svg {
+  filter: invert(70%) sepia(30%) saturate(6807%) hue-rotate(108deg)
+    brightness(100%) contrast(87%);
+}
+
+.red-svg {
+  //filter: invert(70%) sepia(30%) saturate(6807%) hue-rotate(108deg)
+  //brightness(100%) contrast(87%);
+  filter: invert(24%) sepia(21%) saturate(6257%) hue-rotate(353deg)
+    brightness(96%) contrast(91%);
+}
+
+.yellow-svg {
+  //filter: invert(70%) sepia(30%) saturate(6807%) hue-rotate(108deg)
+  //brightness(100%) contrast(87%);
+  filter: invert(82%) sepia(36%) saturate(5762%) hue-rotate(14deg)
+    brightness(98%) contrast(95%);
+}
+.green-card {
+  background: #09bd81;
+  color: white;
+}
+
+.on-green-font {
+  color: white;
+}
+
+.on-green-svg {
+  filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
+    brightness(108%) contrast(100%);
+}
+
+.yellow-card {
+  background: #c9b306;
+  color: white;
+}
+
+.on-yellow-font {
+  color: white;
+}
+
+.on-yellow-svg {
+  filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
+    brightness(108%) contrast(100%);
+}
+
+.red-card {
+  background: #ab3616;
+  color: white;
+}
+
+.on-red-font {
+  color: white;
+}
+
+.on-red-svg {
+  filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
+    brightness(108%) contrast(100%);
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  //flex-direction: column-reverse;
+  margin: 2%;
+}
+
+.child {
+  flex: 1 1 41%;
+  margin: 5px;
+  height: 100px;
+}
+.child:last-child {
+  max-width: 48.95%;
+}
+
+// Narrow  screens -- phones i portrait, except as noted
+// ...only one column of cards
+@media only screen and (max-width: 568px) {
+  .child {
+    flex: 1 1 90%;
+  }
+
+  .child:last-child {
+    max-width: 98%;
+  }
+
+  ion-card-title {
+    font-size: 18pt;
+    //color: red;
+  }
+  // really small phones
+  @media (orientation: landscape) {
+    ion-card-header {
+      //padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+// Wide screens - necessary?
+//@media only screen and (min-width: 560px) {
+//img {
+//width: 60%;
+//}
+
+//ion-card-title {
+//font-size: 1.5rem;
+//color: green;
+//}
+//}
+
+// All phones in landscape
+@media only screen and (min-width: 460px) and (max-width: 900px) {
+  @media (orientation: landscape) {
+    ion-card-title {
+      //color: yellow;
+      //padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+// All large screen to include ipads and desktops
+@media only screen and (min-width: 768px) {
+  @media (orientation: portrait) {
+    ion-card-title {
+      font-size: 1.8rem;
+      //color: purple;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  @media (orientation: landscape) {
+    ion-card-title {
+      font-size: 1.8rem;
+      //color: tomato;
+    }
+  }
+}

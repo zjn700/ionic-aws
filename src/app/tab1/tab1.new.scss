@@ -1,0 +1,47 @@
+//$my-name: --;
+$color-cards-red: #ff0000;
+
+.color-cards {
+  ion-header {
+    ion-toolbar {
+      ion-title {
+        color: $color-cards-red;
+      }
+    }
+  }
+
+  ion-content {
+    ion-card {
+      .welcome-card {
+        max-height: 35vh;
+        overflow: hidden;
+        text-align: center;
+      }
+    }
+    ion-list {
+      .parent {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2%;
+        ion-card {
+          .child {
+            flex: 1 1 41%;
+            margin: 5px;
+            height: 100px;
+            ion-card-header {
+              img {
+                .icon-img {
+                  float: left;
+                  width: 80px;
+                  height: 80px;
+                }
+              }
+              ion-card-title {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

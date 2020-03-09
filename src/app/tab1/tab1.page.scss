@@ -1,3 +1,5 @@
+$color-cards-red: #ff0000;
+
 .welcome-card img {
   max-height: 35vh;
   overflow: hidden;
@@ -43,6 +45,7 @@ img {
 
 .on-yellow-font {
   color: white;
+  //color: $color-cards-red; // #ff0000;
 }
 
 .on-yellow-svg {
