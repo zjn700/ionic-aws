@@ -1,0 +1,11 @@
+.big-font {
+  font-size: 4rem;
+}
+
+.some-colors {
+  //:root {
+  --red: red;
+  --green: green;
+  --random-red: #fffeee;
+}
+@import "tab1.page";

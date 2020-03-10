@@ -13,21 +13,23 @@ badd +1 app.component.html
 badd +1 app-routing.module.ts
 badd +1 tabs/tabs.page.html
 badd +1 ~/dev/ionic-aws/src/index.html
-badd +2 ~/.vim/coc-settings.json
-badd +41 ~/.vimrc
+badd +1 ~/.vim/coc-settings.json
+badd +1 ~/.vimrc
 badd +1 \[Plugins]
 badd +1 tab1/tab1.page.html
-badd +48 tab1/tab1.page.scss
+badd +34 tab1/tab1.page.scss
 badd +6 ~/dev/ionic-aws/src/assets/Lessons.ts
 badd +6 tab3/tab3.page.html
 badd +22 tab2/tab2.page.html
 badd +22 tab2/tab2content/tab2content.component.html
-badd +2 tab1/tab1.page.ts
+badd +3 tab1/tab1.page.ts
 badd +1 tab1/.tab1.page.html.swp
 badd +1 tab2/tab2.page.scss
 badd +12 tab2/tab2.page.ts
-badd +1 tab1/tab1.new.scss
-badd +0 TabManager
+badd +10 tab1/tab1.new.scss
+badd +1 TabManager
+badd +1 tab1/styles/_default-colors.scss
+badd +0 tab1/_default-colors.scss
 argglobal
 silent! argdel *
 edit tab1/tab1.page.html
@@ -51,12 +53,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 16 - ((1 * winheight(0) + 7) / 14)
+let s:l = 8 - ((7 * winheight(0) + 7) / 14)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-16
-normal! 07|
+8
+normal! 033|
 lcd ~/dev/ionic-aws/src/app
 wincmd w
 argglobal
@@ -70,17 +72,60 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 38 - ((12 * winheight(0) + 7) / 14)
+let s:l = 7 - ((6 * winheight(0) + 7) / 14)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-38
-normal! 03|
+7
+normal! 016|
 lcd ~/dev/ionic-aws/src/app
 wincmd w
-2wincmd w
 exe '1resize ' . ((&lines * 14 + 16) / 33)
 exe '2resize ' . ((&lines * 14 + 16) / 33)
+tabedit ~/dev/ionic-aws/src/global.scss
+set splitbelow splitright
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 45 - ((26 * winheight(0) + 14) / 29)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+45
+normal! 03|
+lcd ~/dev/ionic-aws/src/app
+tabedit ~/dev/ionic-aws/src/app/tab1/_default-colors.scss
+set splitbelow splitright
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 9 - ((8 * winheight(0) + 14) / 29)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+9
+normal! 023|
+lcd ~/dev/ionic-aws/src/app
 tabedit ~/dev/ionic-aws/src/app/tab1/tab1.page.scss
 set splitbelow splitright
 set nosplitright
@@ -96,14 +141,36 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 69 - ((1 * winheight(0) + 14) / 29)
+let s:l = 1 - ((0 * winheight(0) + 14) / 29)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-69
+1
 normal! 0
 lcd ~/dev/ionic-aws/src/app
-tabnext 1
+tabedit ~/dev/ionic-aws/src/app/tab1/tab1.page.ts
+set splitbelow splitright
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 8 - ((7 * winheight(0) + 14) / 29)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+8
+normal! 016|
+lcd ~/dev/ionic-aws/src/app
+tabnext 3
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
 endif

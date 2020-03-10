@@ -1,4 +1,4 @@
-$color-cards-red: #ff0000;
+//@import "default-colors";
 
 .welcome-card img {
   max-height: 35vh;
@@ -31,6 +31,7 @@ img {
 
 .on-green-font {
   color: white;
+  color: var(--random-red);
 }
 
 .on-green-svg {

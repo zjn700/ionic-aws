@@ -1,11 +1,15 @@
-//$my-name: --;
-$color-cards-red: #ff0000;
+//@import "default-colors";
+//@import "~@ionic/angular/css/core.css";
 
-.color-cards {
+$color-cards-red: red;
+$red: red;
+
+div.some-colors {
   ion-header {
     ion-toolbar {
       ion-title {
         color: $color-cards-red;
+        //color: var(--random-red);
       }
     }
   }

@@ -5,7 +5,8 @@ import { lessons } from "../../assets/Lessons";
 @Component({
   selector: "app-tab1",
   templateUrl: "tab1.page.html",
-  styleUrls: ["tab1.page.scss"]
+  styleUrls: ["_default-colors.scss"]
+  //styleUrls: ["tab1.page.scss"]
 })
 export class Tab1Page {
   lessons = lessons;

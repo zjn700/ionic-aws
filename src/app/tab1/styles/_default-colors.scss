@@ -1,0 +1,19 @@
+/*:root {*/
+////--random-red: #faf000;
+//--random-red: aqua;
+/*}*/
+@import "tab1.new";
+
+.big-font {
+  font-size: 4rem;
+}
+
+.some-colors {
+  --red: red;
+  --green: green;
+
+  div {
+    //&var(--color-cards);
+    color: var(--red);
+  }
+}
