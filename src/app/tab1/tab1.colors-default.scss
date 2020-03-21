@@ -1,0 +1,14 @@
+.big-font {
+  font-size: 4rem;
+}
+
+.some-colors {
+  //:root {
+  --red: red;
+  --green: green;
+  --random-red: #fffeee;
+}
+
+@import "other-colors";
+//@import "../../theme/ilo-colors-default";
+@import "structure";

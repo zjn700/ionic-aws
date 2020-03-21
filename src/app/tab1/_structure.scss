@@ -1,4 +1,4 @@
-//@import "../../theme/ilo-colors-default";
+//@import "default-colors";
 
 .welcome-card img {
   max-height: 35vh;
@@ -19,65 +19,56 @@ img {
   height: 80px;
 }
 
-.green-svg {
-  filter: invert(70%) sepia(30%) saturate(6807%) hue-rotate(108deg)
-    brightness(100%) contrast(87%);
-}
+// Start colors
+//.green-svg {
+//filter: invert(70%) sepia(30%) saturate(6807%) hue-rotate(108deg)
+//brightness(100%) contrast(87%);
+//}
 
-.red-svg {
-  //filter: invert(70%) sepia(30%) saturate(6807%) hue-rotate(108deg)
-  //brightness(100%) contrast(87%);
-  filter: invert(24%) sepia(21%) saturate(6257%) hue-rotate(353deg)
-    brightness(96%) contrast(91%);
-}
+//.green-card {
+//background: #09bd81;
+//color: white;
+//}
 
-.yellow-svg {
-  //filter: invert(70%) sepia(30%) saturate(6807%) hue-rotate(108deg)
-  //brightness(100%) contrast(87%);
-  filter: invert(82%) sepia(36%) saturate(5762%) hue-rotate(14deg)
-    brightness(98%) contrast(95%);
-}
-.green-card {
-  background: #09bd81;
-  color: white;
-}
+//.on-green-font {
+//color: white;
+//color: var(--random-red);
+//}
 
-.on-green-font {
-  color: white;
-}
+//.on-green-svg {
+//filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
+//brightness(108%) contrast(100%);
+//}
 
-.on-green-svg {
-  filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
-    brightness(108%) contrast(100%);
-}
+//.yellow-card {
+//background: #c9b306;
+//color: white;
+//}
 
-.yellow-card {
-  background: #c9b306;
-  color: white;
-}
+//.on-yellow-font {
+//color: white;
+////color: $color-cards-red; // #ff0000;
+//}
 
-.on-yellow-font {
-  color: white;
-}
+//.on-yellow-svg {
+//filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
+//brightness(108%) contrast(100%);
+//}
 
-.on-yellow-svg {
-  filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
-    brightness(108%) contrast(100%);
-}
+//.red-card {
+//background: #ab3616;
+//color: white;
+//}
 
-.red-card {
-  background: #ab3616;
-  color: white;
-}
+//.on-red-font {
+//color: white;
+//}
 
-.on-red-font {
-  color: white;
-}
-
-.on-red-svg {
-  filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
-    brightness(108%) contrast(100%);
-}
+//.on-red-svg {
+//filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
+//brightness(108%) contrast(100%);
+//}
+// end colors
 
 .parent {
   display: flex;
@@ -108,9 +99,7 @@ img {
 
   ion-card-title {
     font-size: 18pt;
-    color: var(--random-black);
-    //color: var(--random-red);
-    ////color: red;
+    //color: red;
   }
   // really small phones
   @media (orientation: landscape) {

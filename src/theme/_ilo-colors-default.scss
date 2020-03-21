@@ -1,0 +1,57 @@
+.ilo-colors-default {
+  --red: red;
+  --green: green;
+  //--random-red: #333aaa;
+  //--random-red: #666eee;
+  --random-red: #fff;
+  --random-black: #000;
+
+  .green-svg {
+    filter: invert(70%) sepia(30%) saturate(6807%) hue-rotate(108deg)
+      brightness(100%) contrast(87%);
+  }
+
+  .green-card {
+    background: #09bd81;
+    color: white;
+  }
+
+  .on-green-font {
+    color: white;
+    color: var(--random-red);
+  }
+
+  .on-green-svg {
+    filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
+      brightness(108%) contrast(100%);
+  }
+
+  .yellow-card {
+    background: #c9b306;
+    color: white;
+  }
+
+  .on-yellow-font {
+    color: white;
+    //color: $color-cards-red; // #ff0000;
+  }
+
+  .on-yellow-svg {
+    filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
+      brightness(108%) contrast(100%);
+  }
+
+  .red-card {
+    background: #ab3616;
+    color: white;
+  }
+
+  .on-red-font {
+    color: white;
+  }
+
+  .on-red-svg {
+    filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
+      brightness(108%) contrast(100%);
+  }
+}
