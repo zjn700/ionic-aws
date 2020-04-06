@@ -3,8 +3,13 @@
   <ion-toolbar>
     <!--<ion-title class="big-font"> Ilonggo</ion-title>-->
     <ion-title> Ilonggo</ion-title>
-    <ion-button color="secondary" (click)="changeTheme()">
-      <ion-icon name="logo-angular"></ion-icon>
+    <ion-button (click)="changeTheme()">
+      <!--<ion-icon name="logo-angular"></ion-icon>-->
+      <ion-icon
+        *ngIf="this.theme == 'ilo-colors-light'"
+        name="sunny"
+      ></ion-icon>
+      <ion-icon *ngIf="this.theme != 'ilo-colors-light'" name="moon"></ion-icon>
     </ion-button>
 
     <!--<ion-button color="warning" (click)="presentAlertMultipleButtons()">-->

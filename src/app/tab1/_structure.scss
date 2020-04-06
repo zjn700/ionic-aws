@@ -20,6 +20,9 @@ ion-card-title {
   color: var(--text);
 }
 
+ion-button {
+  --background: var(--gray3);
+}
 img {
   display: block;
   margin-left: auto;
