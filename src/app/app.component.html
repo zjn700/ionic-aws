@@ -1,4 +1,6 @@
-<ion-app class="ilo-colors-default">
+<!--<ion-app class="ilo-colors-dark">-->
+<!--<ion-app class="ilo-colors-light">-->
+<ion-app [ngClass]="this.theme">
   <!-- Content -->
-  <ion-router-outlet></ion-router-outlet>
+  <ion-router-outlet (themeEvent)="changeTheme($event)"> </ion-router-outlet>
 </ion-app>

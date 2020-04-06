@@ -3,6 +3,13 @@
   <ion-toolbar>
     <!--<ion-title class="big-font"> Ilonggo</ion-title>-->
     <ion-title> Ilonggo</ion-title>
+    <ion-button color="secondary" (click)="changeTheme()">
+      <ion-icon name="logo-angular"></ion-icon>
+    </ion-button>
+
+    <!--<ion-button color="warning" (click)="presentAlertMultipleButtons()">-->
+    <!--<ion-icon name="logo-angular"></ion-icon>-->
+    <!--</ion-button>-->
   </ion-toolbar>
 </ion-header>
 
@@ -21,7 +28,7 @@
     >
       <ion-card-header>
         <img
-          class="icon-img on-{{ lesson.color }}-svg"
+          class="icon-img on-{{ lesson.color }}-svgr"
           src="assets/icon/custom/{{ lesson.icon }}.svg"
         />
         <ion-card-title class="on-{{ lesson.color }}-font">{{

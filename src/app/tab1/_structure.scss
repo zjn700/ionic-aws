@@ -1,9 +1,23 @@
-//@import "default-colors";
-
 .welcome-card img {
   max-height: 35vh;
   overflow: hidden;
   text-align: center;
+}
+
+ion-toolbar {
+  --color: var(--text);
+  --background: var(--bg);
+}
+
+ion-content {
+  --ion-background-color: var(--bg-nav);
+}
+ion-card {
+  background: var(--bg);
+  //--background: var(--bg-nav);
+}
+ion-card-title {
+  color: var(--text);
 }
 
 img {
@@ -11,6 +25,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  filter: var(--svg-color);
 }
 
 .icon-img {
@@ -18,57 +33,6 @@ img {
   width: 80px;
   height: 80px;
 }
-
-// Start colors
-//.green-svg {
-//filter: invert(70%) sepia(30%) saturate(6807%) hue-rotate(108deg)
-//brightness(100%) contrast(87%);
-//}
-
-//.green-card {
-//background: #09bd81;
-//color: white;
-//}
-
-//.on-green-font {
-//color: white;
-//color: var(--random-red);
-//}
-
-//.on-green-svg {
-//filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
-//brightness(108%) contrast(100%);
-//}
-
-//.yellow-card {
-//background: #c9b306;
-//color: white;
-//}
-
-//.on-yellow-font {
-//color: white;
-////color: $color-cards-red; // #ff0000;
-//}
-
-//.on-yellow-svg {
-//filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
-//brightness(108%) contrast(100%);
-//}
-
-//.red-card {
-//background: #ab3616;
-//color: white;
-//}
-
-//.on-red-font {
-//color: white;
-//}
-
-//.on-red-svg {
-//filter: invert(99%) sepia(53%) saturate(0%) hue-rotate(321deg)
-//brightness(108%) contrast(100%);
-//}
-// end colors
 
 .parent {
   display: flex;
@@ -111,16 +75,7 @@ img {
 }
 
 // Wide screens - necessary?
-//@media only screen and (min-width: 560px) {
-//img {
-//width: 60%;
-//}
-
-//ion-card-title {
-//font-size: 1.5rem;
-//color: green;
-//}
-//}
+//@media only screen and (min-width: 560px) {}
 
 // All phones in landscape
 @media only screen and (min-width: 460px) and (max-width: 900px) {

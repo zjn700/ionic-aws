@@ -1,0 +1,11 @@
+.ilo-colors-light {
+  --bg: var(--gray0);
+  --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3));
+  --bg-dropdown: var(--gray0);
+  --bg-dropdown: var(--gray3);
+  --text: var(--gray6);
+  --border-color: var(--blue);
+  --bg-solar: var(--yellow);
+  --svg-color: invert(25%) sepia(72%) saturate(1974%) hue-rotate(338deg)
+    brightness(81%) contrast(105%);
+}
