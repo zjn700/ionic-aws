@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { ActionSheetController, AlertController } from "@ionic/angular";
+
 @Component({
   selector: "app-tab3",
   templateUrl: "tab3.page.html",
@@ -17,6 +18,7 @@ export class Tab3Page {
 
   logScrolling() {
     console.log("logScrollStart");
+    console.log("test")
   }
 
   logScrollEnd() {
