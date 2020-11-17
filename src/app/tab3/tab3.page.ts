@@ -4,7 +4,7 @@ import { ActionSheetController, AlertController } from "@ionic/angular";
 @Component({
   selector: "app-tab3",
   templateUrl: "tab3.page.html",
-  styleUrls: ["tab3.page.scss"]
+  styleUrls: ["tab3.page.scss"],
 })
 export class Tab3Page {
   constructor(
@@ -18,7 +18,7 @@ export class Tab3Page {
 
   logScrolling() {
     console.log("logScrollStart");
-    console.log("test")
+    console.log("test");
   }
 
   logScrollEnd() {
@@ -30,9 +30,9 @@ export class Tab3Page {
       header: "Alert",
       subHeader: "Subtitle",
       message: "This is an alert message.",
-      buttons: ["Cancel", "Open Modal", "Delete"]
+      buttons: ["Cancel", "Open Modal", "Delete"],
     });
-
+    console.log("bah");
     await alert.present();
   }
 
@@ -50,39 +50,43 @@ export class Tab3Page {
           icon: "trash",
           handler: () => {
             console.log("Delete clicked");
-          }
+          },
         },
         {
           text: "Share",
           icon: "share",
           handler: () => {
             console.log("Share clicked");
-          }
+          },
         },
         {
           text: "Play (open modal)",
           icon: "arrow-dropright-circle",
           handler: () => {
             console.log("Play clicked");
-          }
+          },
         },
         {
           text: "Favorite",
           icon: "heart",
           handler: () => {
             console.log("Favorite clicked");
-          }
+          },
         },
         {
           text: "Cancel",
           icon: "close",
           role: "cancel",
           handler: () => {
-            console.log("Cancel clicked");
-          }
-        }
-      ]
+            console.log("Cancel clicked one");
+          },
+        },
+      ],
     });
     await actionSheet.present();
+  }
+
+  settingsPopover() {
+    console.log("ppp");
   }
 }
