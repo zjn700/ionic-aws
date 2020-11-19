@@ -1,19 +1,37 @@
 <ion-header>
   <ion-toolbar>
     <ion-title> Ilonggo</ion-title>
-    <!--<ion-card-subtitle>test</ion-card-subtitle>-->
+    <ion-card-subtitle>test</ion-card-subtitle>
   </ion-toolbar>
 </ion-header>
 
-<ion-content> </ion-content>
+<ion-content>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-title>Level One</ion-card-title>
+    </ion-card-header>
+  </ion-card>
 
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      New Content
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+  <ion-list class="parent">
+    <ion-card class="child" *ngFor="let lesson of lessons">
+      <ion-card-header>
+        <img
+          class="icon-img {{ lesson.color }}-svg"
+          src="assets/icon/custom/{{ lesson.icon }}.svg"
+        />
+        <ion-card-title>{{ lesson.title }}</ion-card-title>
+      </ion-card-header>
+    </ion-card></ion-list
+  >
+</ion-content>
+
+<!--<ion-header>-->
+<!--<ion-toolbar>-->
+<!--<ion-title>-->
+<!--My Three Sons-->
+<!--</ion-title>-->
+<!--</ion-toolbar>-->
+<!--</ion-header>-->
 
 <!--<ion-content>-->
 <!--<ion-card class="welcome-card">-->
